@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @Entity
 @Getter
 @Setter
-public class DataAtualizacao {
+public class dataAtualizacao {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,7 +21,7 @@ public class DataAtualizacao {
     @JoinColumn(name = "laboratory_id")
     private Laboratory laboratory;
 
-    public DataAtualizacao() {
+    public dataAtualizacao() {
         this.lastUpdated = LocalDateTime.now(); // Inicializa com a data atual
     }
 }
